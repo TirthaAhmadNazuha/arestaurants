@@ -1,0 +1,118 @@
+nav
+  display: flex
+  position: fixed
+  top: -3px
+  left: 0
+  align-items: center
+  width: 100%
+  padding: 18px 23px 10px 23px
+  background: var(--bg)
+  box-sizing: border-box
+  z-index: 88
+  .menuBtn
+    background: #0000
+    height: 44px
+    min-width: 44px
+    padding: 0 12px
+  .logo
+    position: absolute
+    left: 50%
+    transform: translate(-50%)
+  & > a
+    display: none
+  & > .name
+    display: none
+    margin-left: auto
+    margin-right: 22px
+  .getNameUserBtn
+    display: none
+    margin-right: 22px
+    height: 44px
+    min-width: 44px
+    padding: 0 32px
+    font-size: 1.1em
+    font-weight: bold
+    background: var(--darkedbg)
+    border: 2px solid var(--thinpri)
+  .listOfNav
+    display: flex
+    flex-direction: column
+    align-items: start
+    position: fixed
+    top: 0
+    left: 0
+    bottom: 0
+    width: 80vw
+    max-width: 300px
+    z-index: 55
+    box-sizing: border-box
+    padding: inherit
+    background: var(--bg)
+    transition: 300ms
+    .menuBtn
+      margin: 16px 0 0 16px
+    &.off
+      left: -300px
+    .getNameUserBtn
+      display: inline-block
+      margin: 16px auto 8px auto
+    .name
+      font-size: .9em
+      margin: 0 auto
+    h3
+      display: none
+      margin: 12px auto 3px auto
+    ul
+      list-style: none
+      margin: 0 auto
+      width: calc(100% - 28px)
+    li
+      margin: 6px 0
+      width: 100%
+      a
+        color: inherit
+        text-decoration: none
+        display: inline-flex
+        height: 44px
+        min-width: 44px
+        width: 100%
+        background: #0000
+        align-items: center
+        justify-content: center
+        transition: 300ms
+        border-radius: 8px
+        &:hover, &:focus
+          text-decoration: underline
+          color: var(--he)
+          background: var(--primary)
+
+@media screen and (min-width: 768px)
+  nav
+    & > a
+      display: inline-flex
+      height: 44px
+      background: #0000
+      min-width: 44px
+      align-items: center
+      justify-content: center
+      padding: 0 18px
+      border-radius: 8px
+      text-decoration: none
+      margin-left: 12px
+      transition: 300ms
+      &:hover, &:focus
+        background: var(--primary)
+        color: var(--he)
+        text-decoration: underline
+    .logo
+      position: static
+      margin: 0 16px
+      transform: translate(0)
+    .menuBtn
+      display: none
+    .listOfNav
+      display: none
+    & > .name
+      display: block
+    .getNameUserBtn
+      display: inline-block

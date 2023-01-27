@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&family=Sevillana&display=swap')
+
+@font-face
+  font-family: 'Material Symbols Outlined'
+  font-style: normal
+  font-weight: 100 700
+  src: url('https://fonts.gstatic.com/s/materialsymbolsoutlined/v76/kJEhBvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oFsI.woff2') format('woff2')
+
+html
+	--primary: #ffd57c
+	--thinpri: #ffd57c58
+	--bg: #fcf1d4
+	--darkedbg: #f7e5b8
+	--co: #523c04
+	--he: #312607
+	--unloadcolor: #ecd094
+	
+*
+	margin: 0
+	padding: 0
+	border: 0
+
+body
+	font: 16px 'Plus Jakarta Sans', sans-serif
+	color: var(--co)
+	background: var(--bg)
+	max-width: 1200px
+	margin: 0 auto
+	&:has(#favorite:target) item-list, &:has(#favorite:target) jumbotron-header
+		display: none
+
+@keyframes rotate
+	0%
+		transform: rotate(0)
+	100%
+		transform: rotate(360deg)
+
+.logo
+	font-family: 'Sevillana', cursive
+	font-size: 32px
+	font-weight: 500
+	color: var(--he)
+
+h1, h2, h3, h4, h5, h6
+	color: var(--he)
+
+input, button, a
+	font: inherit
+	color: var(--he)
+	outline-color: var(--primary)
+	outline-offset: 3px
+*[tabindex="0"]
+	outline-color: var(--primary)
+	outline-offset: 3px
+
+\::-webkit-scrollbar
+	width: 14px
+\::-webkit-scrollbar-track
+	background: var(--darkedbg)
+\::-webkit-scrollbar-thumb
+	background: #ffd97a
+	border-radius: 5px
+	&:hover
+		background: #f0b92f
+
+\::-ms-scrollbar
+	width: 14px
+\::-ms-scrollbar-track
+	background: var(--darkedbg)
+\::-ms-scrollbar-thumb
+	background: #ffd97a
+	border-radius: 5px
+	&:hover
+		background: #f0b92f
+
+\::-moz-scrollbar
+	width: 14px
+\::-moz-scrollbar-track
+	background: var(--darkedbg)
+\::-moz-scrollbar-thumb
+	background: #ffd97a
+	border-radius: 5px
+	&:hover
+		background: #f0b92f
+
+\::scrollbar
+	width: 14px
+\::scrollbar-track
+	background: var(--darkedbg)
+\::scrollbar-thumb
+	background: #ffd97a
+	border-radius: 5px
+	&:hover
+		background: #f0b92f
+
+.material-symbols-outlined
+	font-family: 'Material Symbols Outlined'
+  font-weight: normal
+  font-style: normal
+  line-height: 1
+  letter-spacing: normal
+  text-transform: none
+  display: inline-block
+  white-space: nowrap
+  word-wrap: normal
+  direction: ltr
+  -webkit-font-feature-settings: 'liga'
+  -webkit-font-smoothing: antialiased
+	font-size: 32px
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48
+
+@media screen and (prefers-color-scheme: dark)
+	.material-symbols-outlined
+		font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' -25, 'opsz' 48

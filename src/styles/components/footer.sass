@@ -1,0 +1,69 @@
+footer
+  background: #4e2e0a
+  position: relative
+  color: #f7f0e49d
+  padding: 40px 32px 12px 32px
+  display: flex
+  margin-top: 33px
+  border-top-left-radius: 16px
+  border-top-right-radius: 16px
+  flex-direction: column
+  align-items: center
+  overflow: hidden
+  h3, h4
+    color: #fdb841ee
+  .logo
+    color: #fce9c8ee
+  h3
+    margin-bottom: 6px
+  ul
+    list-style: disc
+    li
+      margin-left: 16px
+      margin-top: 10px
+  section
+    display: flex
+    flex-direction: column
+    row-gap: 32px
+  .image
+    position: absolute
+    bottom: -30px
+    right: -40px
+    img
+      filter: brightness(999) opacity(.24) drop-shadow(0 0 20px #ffd57caa)
+      transform: scale(1.2)
+  .copyright
+    display: block
+    width: 100%
+    padding: 12px 0
+    margin-top: 32px
+    text-align: center
+    border-top: 2px solid #eeece777
+  .nameAndCreator
+    display: flex
+    flex-direction: column
+    h4
+      margin-top: 8px
+    .creator
+      font-size: 26px
+      display: block
+      color: #fce9c8ee
+      margin: 3px 0
+    li
+      margin-top: 0
+    a
+      display: inline-flex
+      height: 44px
+      min-width: 44px
+      align-items: center
+      color: inherit
+      text-decoration: none
+      &:hover, &:active
+        color: #fffd
+        text-decoration: underline
+
+@media screen and (min-width: 768px)
+  footer
+    section
+      display: grid
+      grid-template-columns: 1.3fr .7fr 1fr

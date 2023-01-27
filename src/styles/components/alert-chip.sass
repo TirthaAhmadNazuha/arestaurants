@@ -1,0 +1,19 @@
+alert-chip
+  position: fixed
+  left: 22px
+  bottom: -80px
+  z-index: 130
+  padding: 12px 25px
+  box-sizing: border-box
+  max-width: calc( 100vw - 44px )
+  background: red
+  font-size: 1.1em
+  color: #fffd
+  border: 2px solid #00000055
+  border-radius: 12px
+  box-shadow: 0 3px 12px #0006
+  transform: scale(.3)
+  transition: 400ms ease
+  &.on
+    bottom: calc( 2vh + 32px )
+    transform: scale(1)

@@ -1,0 +1,18 @@
+item-list, #favorite > .con
+  display: grid
+  width: 100%
+  min-height: 140vh
+  gap: 18px
+  padding: 18px
+  box-sizing: border-box
+  grid-template-columns: 1fr
+
+@media screen and (min-width: 375px)
+  item-list, #favorite > .con
+    grid-template-columns: repeat(2, 1fr)
+@media screen and (min-width: 768px)
+  item-list, #favorite > .con
+    grid-template-columns: repeat(3, 1fr)
+@media screen and (min-width: 10024px)
+  item-list, #favorite > .con
+    grid-template-columns: repeat(4, 1fr)

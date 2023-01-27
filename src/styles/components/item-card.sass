@@ -1,0 +1,51 @@
+a.item-card
+  display: block
+  width: 100%
+  position: relative
+  text-decoration: none
+  outline-color: var(--primary)
+  outline-offset: 3px
+  border-radius: 18px
+  &:hover, &:focus
+    text-decoration: underline
+  article
+    padding-bottom: 12px
+    background: var(--darkedbg)
+    border-radius: 16px
+  img
+    width: 100%
+    max-width: auto
+    height: 200px
+    object-fit: cover
+    object-position: center
+    border-radius: 16px
+    margin-bottom: 6px
+  .img-unload
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 200px
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 16px
+    background: var(--unloadcolor)
+    opacity: 1
+    transition: opacity 300ms
+    &.off
+      opacity: 0
+    .loading-indicator
+      width: 30px
+      height: 30px
+      border-radius: 50%
+      border: 5px dotted var(--bg)
+      animation: rotate 600ms infinite
+
+  h3, p
+    margin-left: 12px
+    min-height: 24px
+    width: calc( 100% - 12px )
+    box-sizing: border-box
+    text-decoration: none
+    margin-bottom: 3px

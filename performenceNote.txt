@@ -1,0 +1,17 @@
+Before:
+- score: 25
+- FCP: 1.9s
+- Speed Index: 4.7s
+- LCP: 7s
+- Time to Interactive: 5.5s
+- TBT: 2.780ms
+- CLS: 0.923
+
+After:
+- score: 54
+- FCP: 0.9s
+- Speed Index: 3.6s
+- LCP: 2.1s
+- Time to Interactive: 3.7s
+- TBT: 2.110ms
+- CLS: 0.983

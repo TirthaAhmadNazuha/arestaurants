@@ -1,0 +1,56 @@
+geting-name
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  display: none
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  background: #0005
+  backdrop-filter: blur(16px)
+  z-index: 120
+  &.on
+    display: flex
+  .close
+    margin-bottom: 22px
+    display: flex
+    padding-left: 10px
+    align-items: center
+    span
+      margin-right: 3px
+  form
+    background: var(--bg)
+    padding: 22px 32px
+  h2
+    margin-bottom: 28px
+  fieldset
+    border: 2px solid var(--primary)
+    background: #fff6
+    border-radius: 8px
+    &:has(input:focus)
+      background: #fff
+  legend
+    margin-left: 13px
+    padding: 0 4px
+    line-height: 12px
+    color: var(--primary)
+    transform: translate(0, -3px)
+  input
+    height: 44px
+    min-width: 44px
+    padding: 0 16px
+    width: 200px
+    font-size: 1.08em
+    background: #0000
+    outline: none
+  button
+    margin-top: 16px
+    height: 44px
+    min-width: 44px
+    padding: 0 22px
+    font-size: 1.1rem
+    font-weight: bold
+    border-radius: 8px
+    background: var(--primary)
