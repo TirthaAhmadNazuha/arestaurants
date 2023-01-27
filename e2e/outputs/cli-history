@@ -1,5 +1,0 @@
-
-
-<<< Recorded commands on Fri Jan 27 2023 20:25:57 GMT+0700 (Western Indonesia Time)
-I.fillField('.addNewReview input', 'Keren')
-I.click('.addNewReview button[type="submit"]')

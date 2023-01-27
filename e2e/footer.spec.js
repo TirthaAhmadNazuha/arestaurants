@@ -9,6 +9,5 @@ Scenario('Mengklik media sosial creator', ({ I }) => {
   I.scrollPageToBottom();
   I.wait(5);
   I.click('footer a[href="https://www.instagram.com/tirtha.ahmad.nazuha/"]');
-  I.wait(5);
-  pause();
+  I.wait(10);
 });

@@ -6,6 +6,7 @@
   "scripts": {
     "starting-dev": "webpack-dev-server --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
+    "build-dev": "webpack --config webpack.dev.js",
     "start": "node server.js",
     "test": "karma start",
     "build-image": "node sharp.js",

@@ -6,7 +6,7 @@ Before(({ I }) => {
 });
 
 Scenario('Inisiatif sign terlebih dahulu setelah itu menambahkan review', ({ I }) => {
-  I.waitForElement('nav', 2);
+  I.waitForElement('nav', 5);
   I.click('sign', 'nav');
   I.fillField('name', 'Tirtha Ahmad Nazuha');
   I.click('form button');
