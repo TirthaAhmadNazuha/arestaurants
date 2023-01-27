@@ -3,7 +3,7 @@ const { merge } = require('webpack-merge');
 const WorkboxWebpackplugin = require('workbox-webpack-plugin');
 const path = require('path');
 const ImageminWebpackPlugin = require('imagemin-webpack-plugin').default;
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+// const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const CompressionPlugin = require('compression-webpack-plugin');
 const ImageminMozjpeg = require('imagemin-mozjpeg');
 
@@ -68,6 +68,6 @@ module.exports = merge(common, {
     new CompressionPlugin({
       exclude: ['**/sw.js', '**/swRegister.js'],
     }),
-    new BundleAnalyzerPlugin(),
+    // new BundleAnalyzerPlugin(),
   ],
 });

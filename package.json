@@ -5,11 +5,12 @@
   "main": "index.js",
   "scripts": {
     "starting-dev": "webpack-dev-server --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js",
+    "build": "webpack --config webpack.prod.js && npm run remove-unused-file",
     "start": "node server.js",
     "test": "karma start",
     "build-image": "node sharp.js",
-    "e2e": "codeceptjs run --steps"
+    "e2e": "codeceptjs run --steps",
+    "remove-unused-file": "node removeUnUsedFileAfterBuild.js"
   },
   "keywords": [],
   "author": "your_name <your.email@domain.com>",
