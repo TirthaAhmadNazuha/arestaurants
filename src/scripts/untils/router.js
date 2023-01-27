@@ -28,6 +28,7 @@ const router = {
     } else {
       for (const child of this.overview.parentElement.children) {
         child.setAttribute('style', '');
+        jumbotron.setAttribute('style', '');
       }
       this.overview.classList.remove('on');
     }

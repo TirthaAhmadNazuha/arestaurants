@@ -45,7 +45,7 @@
       "name": "Want to view favorite?",
       "short_name": "Favorite",
       "description": "View Favorite Item",
-      "url": "#favorite",
+      "url": "../#favorite",
       "icons": [{ "src": "/images/Ashen-Cecilia-icon_192.png", "sizes": "192x192" }]
     }
   ],
